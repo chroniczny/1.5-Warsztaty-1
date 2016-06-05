@@ -2,6 +2,7 @@ body {
     font-family: 'ralewaymedium';
 
 }
+
 header {
     background-color: black;
     color: white;
@@ -14,9 +15,9 @@ header {
 
 .h__menuLogo {
     float: left;
-    font-family: 'ralewaymedium';
+    font-family: 'ralewaysemibold';
     font-size: .9em;
-    /*margin: 15px 10px 0 15px;*/
+    margin: 15px 0;
 }
 
 .menu {
@@ -34,10 +35,10 @@ a.contact, a.galery, a.about {
 .mainDIV {
     margin: 0 auto;
     width: 1200px;
-    padding: 15px 65px;
+    padding: 0 65px;
     border: 1px solid yellow;
+    overflow: auto;
 }
-
 
 li {
     float: right;
@@ -46,25 +47,116 @@ li {
     letter-spacing: 0.1em;
     font-size: 15px;
     list-style: none;
-    margin: 0 20px;
+    margin: 15px 20px;
     border: 1px solid rgba(1, 1, 1, 0);
     border-radius: 5px;
     /*padding: 0 15px;*/
 }
-
-#contact. li {
+ul a:first-child li {
     margin-right: 0;
 }
 
 .sec__carousel {
     height: 500px;
 
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(204,204,212,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ccccd4', GradientType=0 );
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(204, 204, 212, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ccccd4', GradientType=0);
+}
+
+.sec__carousel .mainDIV {
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.arrow {
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid blue;
+    font-family: 'ralewaylight';
+    height: 400px;
+    font-size: 5em;
+    /*vertical-align: middle;*/
+    margin: 0;
+    padding: 206px 0 0 0;
+}
+
+/*.arrow p {*/
+
+/*}*/
+
+/*.arrow:first-child {*/
+
+/*float: left;*/
+/*}*/
+
+/*.arrow:last-child {*/
+/*float: right;*/
+/*}*/
+
+.picture_carousel {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    height: 495px;
+    width: 400px;
+}
+
+.picture_carousel img {
+    position: absolute;
+    left: -80px;
+    top: 70px;
+    /*width: 120%;*/
+    height: 87%;
+}
+
+.carousel__article {
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+    width: 47%;
+    border: 1px solid blue;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 150px;
+    }
+
+.carousel__article p {
+    font-size: 0.5em;
+    line-height: 1.4em;
+    margin: 30px;
+}
+
+h2 {
+    font-family: 'ralewaymedium';
+    /*text-align: center;*/
+    font-size: 1.3em;
+
+}
+
+h2 span {
+    font-family: 'ralewaysemibold';
+
+}
+
+.but_seeMore {
+    margin: 10px auto;
+    width: 250px;
+    height: 37px;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+.greenBlocks {
+    background-color: rgb(36, 186, 160);
 }

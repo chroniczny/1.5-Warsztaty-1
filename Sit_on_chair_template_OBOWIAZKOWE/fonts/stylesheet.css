@@ -118,3 +118,24 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('raleway-semibold.woff2') format('woff2'),
+    url('raleway-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway-thin.woff2') format('woff2'),
+    url('raleway-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
