@@ -33,6 +33,7 @@ a.contact, a.galery, a.about {
 }
 
 .mainDIV {
+    box-sizing: border-box;
     margin: 0 auto;
     width: 1200px;
     padding: 0 65px;
@@ -70,7 +71,7 @@ ul a:first-child li {
 }
 
 .sec__carousel .mainDIV {
-    box-sizing: border-box;
+
     height: 500px;
 }
 
@@ -95,9 +96,9 @@ ul a:first-child li {
 /*float: left;*/
 /*}*/
 
-/*.arrow:last-child {*/
-/*float: right;*/
-/*}*/
+.arrow:nth-child(4) {
+float: right;
+}
 
 .picture_carousel {
     position: relative;
@@ -135,7 +136,7 @@ ul a:first-child li {
 h2 {
     font-family: 'ralewaymedium';
     /*text-align: center;*/
-    font-size: 1.3em;
+    font-size: 1.4em;
 
 }
 
@@ -159,4 +160,104 @@ h2 span {
 
 .greenBlocks {
     background-color: rgb(36, 186, 160);
+}
+
+.sec__whiteArticle {
+    height: 350px;
+    background-color: white;
+}
+
+.picArticle {
+display: inline-block;
+    height: 290px;
+    width: 30%;
+    margin: 20px 20px 20px 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.picArticle > div {
+    position: relative;
+}
+.picArticle img {
+
+}
+
+.picArt__description {
+    position: absolute;
+    bottom: 10px;
+    height: 70px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 103%;
+    }
+
+.description_into {
+    width: 180px;
+    border-bottom: 5px solid rgb(36, 186, 160);
+
+}
+
+.mainCEN {
+    width: 230px;
+    height: 270px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 50px 10px 0px 10px;
+    font-family: "Calibi", Arial, sans-serif;
+    text-align: center;
+
+    /*zad. 9 wystarczy:*/
+    display: inline-block;
+}
+
+.borderBlack {
+    border: 4px solid black;
+    padding: 1em .5em;
+    height: 210px;
+    position: absolute;
+}
+
+.circleDot{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 12px solid white;
+    background-color: black;
+    box-shadow: 0 0 0 4px black;
+    /*obrazek jest pod divem z textem
+    wiec bedzie musiał sie cofnac w góre:*/
+    position: absolute;
+    top: -25px;
+    left: 90px;
+    z-index: 2;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 45px;
+    bottom: 10px;
+    width: 130px;
+    height: 35px;
+    border: none;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 300;
+    margin-top: 2em;
+}
+
+p {
+    font-size: 0.7em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.bordGrey1  {
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
