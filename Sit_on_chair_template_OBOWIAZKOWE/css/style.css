@@ -1,0 +1,70 @@
+body {
+    font-family: 'ralewaymedium';
+
+}
+header {
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+
+.greenOnes {
+    color: rgb(36, 186, 160);
+}
+
+.h__menuLogo {
+    float: left;
+    font-family: 'ralewaymedium';
+    font-size: .9em;
+    /*margin: 15px 10px 0 15px;*/
+}
+
+.menu {
+
+}
+
+.boldOnes {
+    font-family: 'ralewayblack';
+}
+
+a.contact, a.galery, a.about {
+    text-decoration: none;
+}
+
+.mainDIV {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 15px 65px;
+    border: 1px solid yellow;
+}
+
+
+li {
+    float: right;
+    color: white;
+    font-family: 'ralewaybold';
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    list-style: none;
+    margin: 0 20px;
+    border: 1px solid rgba(1, 1, 1, 0);
+    border-radius: 5px;
+    /*padding: 0 15px;*/
+}
+
+#contact. li {
+    margin-right: 0;
+}
+
+.sec__carousel {
+    height: 500px;
+
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(204,204,212,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ccccd4', GradientType=0 );
+}
