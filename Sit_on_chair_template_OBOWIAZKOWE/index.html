@@ -5,7 +5,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style0.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
 </head>
 <body>
 <header>
@@ -59,7 +60,7 @@
     <div class="mainDIV">
         <div class="picArticle">
             <div>
-                <img src="images/box2_img.jpg">
+                <img src="images/box1_img.jpg">
 
                 <div class="picArt__description">
                     <div class="description_into">
@@ -70,7 +71,8 @@
         </div>
         <div class="picArticle">
             <div>
-                <img src="images/box1_img.jpg">
+                <img src="images/box2_img.jpg">
+
                 <div class="picArt__description">
                     <div class="description_into">
                         Chair MARGARITA
@@ -78,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="picArticle bordGrey1">
+        <div class="picArticle">
             <div>
                 <div class="picArt__description">
                     <div class="description_into">
@@ -86,60 +88,128 @@
                     </div>
                 </div>
             </div>
+            <div class="article_text">
+                <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change
+                    when clicking the checkboxes since no click events have been linked.</p>
+
+                <p>Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
+            </div>
         </div>
 
     </div>
 </section>
 <section class="sec__cennik">
-    <div class="mainCEN">
+    <div class="mainDIV">
+        <div class="empty__4title">
+            <div class="sec__title">
+                CENNIK
+            </div>
+        </div>
+        <div class="clearfix"></div>
         <div class="mainCEN">
 
             <div class="circleDot"></div>
 
-            <div class="borderBlack">
-                <h3>NAGŁÓWEK</h3>
+            <div class="borderPrices">
+                <h2 class="greenOnes">BASIC PLAN</h2>
 
-                <p>Jelly-o soufflé cupcake chocolate cake cupcake. Marzipan cookie jujubes chocolate cake jujubes.
-                    Fruitcake jelly gummi bears cupcake pudding muffin sweet roll.</p>
-                <input class="button1" input="submit" value="Więcej infomacji &gt"></div>
+                <div class="round_price">
+                    <h1>85<sup>99</sup></h1>
+
+                    <h3>PLN/MSC</h3>
+                </div>
+                <div class="services">
+                    <ul>
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                    </ul>
+                </div>
+                <input class="button1 greenBlocks" input="submit" value="DOŁĄCZ"></div>
+
+        </div>
+        <div class="mainCEN">
+
+            <div class="circleDot"></div>
+
+            <div class="borderPrices">
+                <h2 class="greenOnes">STANDARD PLAN</h2>
+
+                <div class="round_price">
+                    <h1>95<sup>99</sup></h1>
+
+                    <h3>PLN/MSC</h3>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Zakup towarów + dowóz</li>
+                        <li>Serwis</li>
+                        <li>Gwarancja 5 lat</li>
+                    </ul>
+                </div>
+                <input class="button1 greenBlocks" input="submit" value="DOŁĄCZ"></div>
+        </div>
+
+        <div class="mainCEN">
+
+            <div class="circleDot"></div>
+
+            <div class="borderPrices">
+                <h2 class="greenOnes">ADVANCE PLAN</h2>
+
+                <div class="round_price">
+                    <h1>211<sup>00</sup></h1>
+
+                    <h3>PLN/MSC</h3>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Zakup towarów + dowóz</li>
+                        <li>Serwis</li>
+                        <li>Gwarancja 6 lat</li>
+                        <li>Porady projektanta</li>
+                    </ul>
+                </div>
+                <input class="button1 greenBlocks" input="submit" value="DOŁĄCZ"></div>
         </div>
     </div>
-    <div class="mainCEN">
 
-        <div class="circleDot"></div>
-
-        <div class="borderBlack">
-            <h3>NAGŁÓWEK</h3>
-
-            <p>Jelly-o soufflé cupcake chocolate cake cupcake. Marzipan cookie jujubes chocolate cake jujubes. Fruitcake
-                jelly gummi bears cupcake pudding muffin sweet roll.</p>
-            <input class="button1" input="submit" value="Więcej infomacji &gt"></div>
-    </div>
-    </div>
-    <div class="mainCEN">
-
-        <div class="circleDot"></div>
-
-        <div class="borderBlack">
-            <h3>NAGŁÓWEK</h3>
-
-            <p>Jelly-o soufflé cupcake chocolate cake cupcake. Marzipan cookie jujubes chocolate cake jujubes. Fruitcake
-                jelly gummi bears cupcake pudding muffin sweet roll.</p>
-            <input class="button1" input="submit" value="Więcej infomacji &gt"></div>
-    </div>
-    </div>
-
-
-    </div>
 </section>
 <section class="sec__kontakt">
     <div class="mainDIV">
-
+        <div>
+            <div class="empty__4title">
+                <div class="sec__title">
+                    KONTAKT
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <form>
+                <input type="text" name="name" value="Imię">
+                <input type="email" name="email" value="email">
+                <textarea type="text" name="message">Wiadomość</textarea>
+            </form>
+        </div>
+        <div>
+            <div class="redChair_holder">
+                <img src="images/red_chair.png">
+            </div>
+            <div  class="agreement">
+                <div><img src="images/form_ok.jpg"></div>
+                <div>Zgadzam się na przetwarzanie danych osobowych</div>
+            </div>
+            <input class="greenBlocks but_seeMore buttonBigSend" type="submit" value="WYŚLIJ">
+        </div>
     </div>
 </section>
+<div class="clearfix"></div>
 <footer class="sec__footer">
     <div class="mainDIV">
-
+        <div><p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p></div>
+        <div><h3 class="foot__menuLogo">SIT <span class="boldOnes">ON</span> CHAIR </h3></div>
+        <div><img  class="foo_pics" src="images/twitter.png"></div>
+        <div><img  class="foo_pics" src="images/pinterest.png"></div>
+        <div><img  class="foo_pics" src="images/vimeo.png"></div>
+        <div><img  class="foo_pics" src="images/flickr.png"></div>
     </div>
 </footer>
 </body>
