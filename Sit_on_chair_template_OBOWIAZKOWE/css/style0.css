@@ -1,7 +1,3 @@
-/*ROWIĄZANIE z zastosowaniem float: auto*/
-/*nie podoba mi się ze wzgledu na suwaki pokazujące się w sekcji CENNIK i KONTAKT */
-/*postanowiłem zrobić to inaczej... w pliku style.css */
-
 
 body {
     font-family: 'ralewaymedium';
@@ -12,7 +8,6 @@ header {
     color: white;
     height: 40px;
 }
-
 
 
 .greenOnes {
@@ -29,7 +24,6 @@ header {
 sup {
     font-size: .4em;
     vertical-align: text-top;
-
 }
 
 .boldOnes {
@@ -40,12 +34,10 @@ a.contact, a.galery, a.about {
     text-decoration: none;
 }
 
-.mainDIV {
+.mainDiv {
     box-sizing: padding-box;
     margin: 0 auto;
     width: 1060px;
-    /*padding: 0 65px;*/
-    /*border: 1px solid yellow;*/
     overflow: auto;
 }
 
@@ -59,8 +51,8 @@ li {
     margin: 15px 20px;
     border: 1px solid rgba(1, 1, 1, 0);
     border-radius: 5px;
-    /*padding: 0 15px;*/
 }
+
 ul a:first-child li {
     margin-right: 0;
 }
@@ -78,19 +70,16 @@ ul a:first-child li {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ccccd4', GradientType=0);
 }
 
-.sec__carousel .mainDIV {
-
+.sec__carousel .mainDiv {
     height: 500px;
 }
 
 .arrow {
     box-sizing: border-box;
     float: left;
-    /*border: 1px solid blue;*/
     font-family: 'ralewaylight';
     height: 400px;
     font-size: 5em;
-    /*vertical-align: middle;*/
     margin: 0;
     padding: 206px 0 0 0;
 }
@@ -133,12 +122,10 @@ float: right;
 h2 {
     font-family: 'ralewaymedium';
     font-size: 1.4em;
-
 }
 
 h2 span {
     font-family: 'ralewaysemibold';
-
 }
 
 .but_seeMore {
@@ -156,10 +143,17 @@ h2 span {
     background-color: rgb(36, 186, 160);
 }
 
-.sec__whiteArticle {
+/*SEKCJA BIAŁA Z ARTYKUŁEM*/
+
+#secWhiteArticle {
     height: 350px;
     background-color: white;
 }
+
+#secWhiteArticle .mainDiv{
+    height: 700px;
+}
+
 
 .picArticle {
     display: inline-block;
@@ -190,6 +184,12 @@ width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     width: 100%;
 }
+
+/*chowanie opisu obrazka zrobione w css i jako opcja w app.js*/
+/*.picArticle > div:hover .picArt__description {*/
+/*display: none;*/
+/*}*/
+
 
 
 .description_into {
@@ -229,13 +229,23 @@ p {
     top: 40px;
 }
 
+.invisible {
+    display: none;
+}
+
+
+/*   SEKJA C E N N I K*/
 .sec__cennik {
     background-color: rgb(241, 241, 241);
     height: 745px;
 }
 
 
-.mainCEN {
+.sec__cennik .mainDiv{
+    height: 700px;
+}
+
+.mainCen {
     width: 31%;
     height: 505px;
     box-sizing: border-box;
@@ -246,7 +256,7 @@ p {
     display: inline-block;
 }
 
-.mainCEN:nth-child(5) {
+.mainCen:nth-child(5) {
     margin-right: 0;
 }
 
@@ -259,7 +269,7 @@ p {
     oveflow: auto;
 }
 
-.mainCEN:nth-child(4) .borderPrices {
+.mainCen:hover .borderPrices {
     border: 2px solid rgb(36, 186, 160);
     background-color: rgb(36, 186, 160);
 }
@@ -278,7 +288,7 @@ p {
     z-index: 2;
 }
 
-.mainCEN:nth-child(4) .circleDot {
+.mainCen:hover .circleDot {
     border: 14px solid rgb(36, 186, 160);
     background-color: white;
     box-shadow: 0 0 0 2px rgb(36, 186, 160);
@@ -286,7 +296,6 @@ p {
 
 
 .button1 {
-    /*background-color: rgb(194, 194, 194);*/
     color: white;
     position: absolute;
     left: 95px;
@@ -299,7 +308,7 @@ p {
     font-size: 0.95em;
 }
 
-.mainCEN:nth-child(4) .button1 {
+.mainCen:hover .button1 {
     color: rgb(36, 186, 160);
     background-color: white;
 }
@@ -318,7 +327,7 @@ p {
     color: rgb(194, 194, 194);
 }
 
-.mainCEN:nth-child(4) .round_price {
+.mainCen:hover .round_price {
     border: 2px solid rgb(36, 186, 160);
     color: rgb(36, 186, 160);
 }
@@ -338,7 +347,7 @@ h1 {
     margin-top: 30px;
 }
 
-.mainCEN:nth-child(4) h2 {
+.mainCen:hover h2 {
     color: white;
 }
 
@@ -368,11 +377,11 @@ h1 {
     background-color: rgb(241, 241, 241);
 }
 
-.mainCEN:nth-child(4) .services ul li:nth-of-type(odd) {
+.mainCen:hover .services ul li:nth-of-type(odd) {
     background-color: white;
 }
 
-.mainCEN:nth-child(4) .services ul li:nth-of-type(even) {
+.mainCen:hover .services ul li:nth-of-type(even) {
     background-color: rgb(241, 241, 241);
 }
 
@@ -387,25 +396,36 @@ h1 {
     color: rgb(126, 126, 126);
 }
 
-
-.sec__kontakt {
+/*SEKCJA FORMULARZ KONTAKTOWY */
+.secKontakt {
     height: 510px;
     background-color: white;
 }
-.sec__kontakt .mainDIV > div:nth-child(1) {
-    width: 637px;
+
+
+.secKontakt .mainDiv {
+    height: 600px;
+}
+
+
+.secKontakt .mainDiv > div:nth-child(1) {
     float: left;
 
 }
 
 
-.sec__kontakt .mainDIV > div:nth-child(2) {
+.secKontakt .mainDiv > div:nth-child(2) {
     width: 370px;
     float: right;
 
 }
 
-.sec__kontakt form input, .sec__kontakt form textarea {
+.formholder {
+    width: 60%;
+    float: left;
+}
+
+.secKontakt form input, .secKontakt form .formholder textarea {
     box-sizing: border-box;
     font-family: 'ralewaythin';
     font-size: 2em;
@@ -417,71 +437,88 @@ h1 {
 }
 
 
-.sec__kontakt input {
+.secKontakt input {
     vertical-align: middle;
     color: rgb(203, 203, 203);
     padding: 13px 0 13px 10px;
 }
 
-.sec__kontakt textarea {
+.secKontakt textarea {
     height: 190px;
     padding-left: 13px;
     padding-top: 13px;
 }
-
-#checked_checked {
-    background-image: "images/form_ok.jpg";
-}
-
+/*CZĘŚC FORMULARZA Z KRZESŁEM I ZGODĄ*/
 
 .redChair_holder {
-    margin-top: 85px;
+    width: 30%;
+    float: right;
 }
 .redChair_holder img {
-    top: -15px;
+    position: relative;
+    top: -33px;
+    right: 64px;
 }
 
-.agreement {
+#agreement {
+    float: right;
     color: rgb(203, 203, 203);
     font-size: 1.3em;
     font-family: 'ralewaylight';
-    position: relative;
-    margin: 30px 0;
+    /*position: relative;*/
+    width: 35%;
+    margin: 20px 0;
 }
 
-.agreement div:first-child {
+#agreement div:first-child {
     border: 1px solid rgb(36, 186, 160);
     height: 45px;
     width: 45px;
-    overflow: hidden;
     float: left;
+    background-color: white;
+}
+#agreement div:first-child input {
+    height: 45px;
+    width: 45px;
+    margin: 0;
     position: relative;
+    z-index: -1;
 }
-.agreement img {
-    height: 35px;
-    position: absolute;
-    top: 5px;
-    /*vertical-align: middle;*/
 
+.checkBoxBird {
+background: url("images/form_ok.jpg") left -2px top 3px no-repeat;
+    /*background-image: url("images/form_ok.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left -2px top 3px;*/
 }
-.agreement div:nth-child(2) {
-    width: 300px;
-    float: left;
-    margin-left: 10px;
-    vertical-align: middle;
+
+
+#agreement div:nth-child(2) {
+    position: relative;
+    left: 20px;
+    top: 2px;
 }
+
+
+.but_seeMore1 {
+    margin: 10px auto;
+    font-size: 0.8em;
+}
+
 
 .buttonBigSend {
-    width: 350px;
+    float: right;
+    width: 30%;
     height: 75px;
-    font-size: 2em;
-    font-family: 'ralewaybold';
+    font-family: 'ralewaybold' !important;;
     color: white !important;
     border: 0;
     padding: 16px 0;
     border-radius: 7px;
     margin-top: 35px;
 }
+
+/*SEKCJA STOPKA*/
 
 .sec__footer {
     height: 150px;
@@ -490,7 +527,7 @@ h1 {
     padding-top: 65px;
 }
 
-.sec__footer .mainDIV div:first-child {
+.sec__footer .mainDiv div:first-child {
 float: left;
 }
 

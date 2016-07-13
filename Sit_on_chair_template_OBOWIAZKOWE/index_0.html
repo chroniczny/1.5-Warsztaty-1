@@ -5,12 +5,12 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/style0_v1.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style0.css">
+
 </head>
 <body>
 <header>
-    <div class="mainDIV">
+    <div class="mainDiv">
         <h3 class="h__menuLogo">SIT <span class="greenOnes boldOnes">ON</span> CHAIR </h3>
 
         <div id="menu">
@@ -31,7 +31,7 @@
 
 </header>
 <section class="sec__carousel">
-    <div class="mainDIV">
+    <div class="mainDiv">
         <div class="arrow greenOnes">
             &lt;
         </div>
@@ -56,8 +56,8 @@
     </div>
 </section>
 <!--<div class="clearfix"></div>-->
-<section class="sec__whiteArticle">
-    <div class="mainDIV">
+<section id="secWhiteArticle">
+    <div class="mainDiv">
         <div class="picArticle">
             <div>
                 <img src="images/box1_img.jpg">
@@ -99,14 +99,14 @@
     </div>
 </section>
 <section class="sec__cennik">
-    <div class="mainDIV">
+    <div class="mainDiv">
         <div class="empty__4title">
             <div class="sec__title">
                 CENNIK
             </div>
         </div>
         <div class="clearfix"></div>
-        <div class="mainCEN">
+        <div class="mainCen">
 
             <div class="circleDot"></div>
 
@@ -127,7 +127,7 @@
                 <input class="button1 greenBlocks" input="submit" value="DOŁĄCZ"></div>
 
         </div>
-        <div class="mainCEN">
+        <div class="mainCen">
 
             <div class="circleDot"></div>
 
@@ -149,7 +149,7 @@
                 <input class="button1 greenBlocks" input="submit" value="DOŁĄCZ"></div>
         </div>
 
-        <div class="mainCEN">
+        <div class="mainCen">
 
             <div class="circleDot"></div>
 
@@ -174,8 +174,8 @@
     </div>
 
 </section>
-<section class="sec__kontakt">
-    <div class="mainDIV">
+<section class="secKontakt">
+    <div class="mainDiv">
         <div>
             <div class="empty__4title">
                 <div class="sec__title">
@@ -185,16 +185,18 @@
             <div class="clearfix"></div>
             <form>
                 <div class="formholder">
-                    <input type="text" name="name" value="Imię">
-                    <input type="email" name="email" value="email">
-                    <textarea type="text" name="message">Wiadomość</textarea>
+                    <input type="text" name="name" placeholder="Imię">
+                    <input type="email" name="email" placeholder="email">
+                    <textarea type="text" name="message" placeholder="Wiadomość"></textarea>
                 </div>
 
                 <div class="redChair_holder">
                     <img src="images/red_chair.png">
                 </div>
-                <div class="agreement">
-                    <div><img src="images/form_ok.jpg"></div>
+                <div id="agreement">
+                    <div class="checkBoxBird">
+                        <input type="checkbox" checked>
+                    </div>
                     <div>Zgadzam się na przetwarzanie danych osobowych</div>
                     <div class="but_seeMore1 ">
                         <input class="greenBlocks buttonBigSend" type="submit" value="WYŚLIJ">
@@ -207,7 +209,7 @@
 </section>
 <div class="clearfix"></div>
 <footer class="sec__footer">
-    <div class="mainDIV">
+    <div class="mainDiv">
         <div><p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p></div>
         <div><h3 class="foot__menuLogo">SIT <span class="boldOnes">ON</span> CHAIR </h3></div>
         <div><img class="foo_pics" src="images/twitter.png"></div>
@@ -216,5 +218,6 @@
         <div><img class="foo_pics" src="images/flickr.png"></div>
     </div>
 </footer>
+<script src="js/app.js"></script>
 </body>
 </html>
