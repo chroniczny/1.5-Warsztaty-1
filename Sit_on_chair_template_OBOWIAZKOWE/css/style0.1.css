@@ -1,0 +1,731 @@
+
+body {
+    font-family: 'ralewaymedium';
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+
+.greenOnes {
+    color: rgb(36, 186, 160);
+}
+
+.hMenuLogo {
+    float: left;
+    font-family: 'ralewaysemibold';
+    font-size: .9em;
+    margin: 15px 0;
+}
+
+sup {
+    font-size: .4em;
+    vertical-align: text-top;
+}
+
+.boldOnes {
+    font-family: 'ralewayextrabold';
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainDiv {
+    box-sizing: padding-box;
+    margin: 0 auto;
+    width: 1060px;
+    overflow: auto;
+}
+
+li {
+    color: white;
+    font-family: 'ralewaybold';
+    letter-spacing: 0.1em;
+    font-size: .9em;
+    list-style: none;
+    width: 110px;
+    margin: 15px 20px 15px 0;
+}
+
+#menu > ul > a > li {
+    float: right;
+}
+
+/*>>>>>>>>>>LISTA PODMENU*/
+#menu > ul ul {
+    display: none;
+    z-index: 2;
+}
+
+#menu > ul > a:nth-child(3) > li > ul > li {
+    padding: 5px 10px;
+    font-family: 'ralewaylight';
+    font-size: 1em;
+    margin: 0;
+    background-color: black;
+    border-radius: 0;
+    border: none;
+    color: white;
+    line-height: 1.2em;
+}
+
+#menu > ul > a:nth-child(3) > li > ul > li:hover {
+    border-color: rgb(36, 186, 160);
+}
+
+#menu > ul > a:nth-child(3) > li > ul > li:first-child {
+    background-color: transparent;
+
+}
+
+#menu > ul > a:nth-child(3) > li > ul > li > div {
+    position: relative;
+    left: 35px;
+    top: 5px;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+
+/*#menu >ul>a:nth-child(3)>li>ul>li:first-child:hover {*/
+/*background-color: transparent;*/
+/*}*/
+
+ul a:first-child li {
+    margin-right: 0;
+}
+
+/*SEKCJA SLIDER-CAROUSEL*/
+
+.sec__carousel {
+    height: 500px;
+
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(204, 204, 212, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(204, 204, 212, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ccccd4', GradientType=0);
+}
+
+.sec__carousel .mainDiv {
+    height: 500px;
+}
+
+.arrow {
+    box-sizing: border-box;
+    float: left;
+    font-family: 'ralewaylight';
+    height: 400px;
+    font-size: 5em;
+    margin: 0;
+    padding: 206px 0 0 0;
+}
+
+.arrow:nth-child(4) {
+    float: right;
+}
+
+.pictureCarousel {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    height: 495px;
+    width: 417px;
+}
+
+.pictureCarousel img {
+    position: relative;
+    left: -70px;
+    bottom: -70px;
+    height: 80%;
+}
+
+.invisible {
+    display: none;
+}
+
+.carousel__article {
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+    width: 47%;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 150px;
+}
+
+.carousel__article p {
+    font-size: 0.5em;
+    line-height: 1.4em;
+    margin: 30px;
+}
+
+h2 {
+    font-family: 'ralewaymedium';
+    font-size: 1.4em;
+}
+
+h2 span {
+    font-family: 'ralewaysemibold';
+}
+
+.but_seeMore {
+    margin: 10px auto;
+    width: 250px;
+    height: 37px;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.greenBlocks {
+    background-color: rgb(36, 186, 160);
+}
+
+/*SEKCJA BIAŁA Z ARTYKUŁEM*/
+
+#secWhiteArticle {
+    height: 350px;
+    background-color: white;
+}
+
+#secWhiteArticle .mainDiv {
+    height: 700px;
+}
+
+.picArticle {
+    display: inline-block;
+    height: 251px;
+    width: 31%;
+    box-sizing: border-box;
+    margin: 22px 24px 23px 0;
+    vertical-align: middle;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.picArticle > div {
+    position: relative;
+}
+
+.picArticle img {
+    width: 100%;
+}
+
+.picArt__description {
+    position: absolute;
+    bottom: 10px;
+    height: 62px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+/*chowanie opisu obrazka zrobione w css i jako opcja w app.js*/
+/*.picArticle > div:hover .picArt__description {*/
+/*display: none;*/
+/*}*/
+
+.description_into {
+    width: 180px;
+    border-bottom: 8px solid rgb(36, 186, 160);
+    margin-left: 15px;
+    margin-top: 16px;
+    padding-bottom: 4px;
+}
+
+.picArticle:nth-child(3) {
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 0;
+}
+
+.picArticle:nth-child(3) .picArt__description {
+    position: absolute;
+    top: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.4em;
+}
+
+.article_text {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    top: 40px;
+}
+
+.invisible {
+    display: none;
+}
+
+/*   SEKCJA C E N N I K*/
+.sec__cennik {
+    background-color: rgb(241, 241, 241);
+    height: 745px;
+}
+
+.sec__cennik .mainDiv {
+    height: 700px;
+}
+
+.mainCen {
+    width: 31%;
+    height: 505px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 50px 28px 20px 0;
+    font-family: "Calibi", Arial, sans-serif;
+    text-align: center;
+    display: inline-block;
+}
+
+.mainCen:nth-child(5) {
+    margin-right: 0;
+}
+
+.borderPrices {
+    border: 2px solid rgb(214, 214, 214);
+    padding: 2.5em 0;
+    height: 442px;
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    /*oveflow: auto;*/
+    width: 320px;
+}
+
+.mainCen:hover .borderPrices {
+    border: 2px solid rgb(36, 186, 160);
+    background-color: rgb(36, 186, 160);
+}
+
+.circleDot {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 14px solid white;
+    background-color: rgb(194, 194, 194);
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    position: absolute;
+    top: -32px;
+    left: 136px;
+    z-index: 2;
+}
+
+.mainCen:hover .circleDot {
+    border: 14px solid rgb(36, 186, 160);
+    background-color: white;
+    box-shadow: 0 0 0 2px rgb(36, 186, 160);
+}
+
+.button1 {
+    color: white;
+    position: absolute;
+    left: 95px;
+    bottom: 20px;
+    width: 120px;
+    height: 33px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 0.95em;
+}
+
+.mainCen:hover .button1 {
+    color: rgb(36, 186, 160);
+    background-color: white;
+}
+
+.borderPrices h2 {
+    font-size: 26px;
+}
+
+.round_price {
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid rgb(214, 214, 214);
+    width: 130px;
+    height: 130px;
+    margin: 26px 40px 40px 94px;
+    color: rgb(194, 194, 194);
+}
+
+.mainCen:hover .round_price {
+    border: 2px solid rgb(36, 186, 160);
+    color: rgb(36, 186, 160);
+}
+
+.round_price h3 {
+    text-align: center;
+    font-family: 'ralewaybold';
+    font-size: .9em;
+    margin-top: 9px;
+}
+
+h1 {
+    font-family: 'ralewaybold';
+    font-size: 2.7em;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mainCen:hover h2 {
+    color: white;
+}
+
+.services li {
+    font-family: 'ralewaymedium';
+    font-size: 1.5em;
+    letter-spacing: 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(165, 165, 165);
+    margin: 0;
+    padding: 9px;
+    border-radius: 0;
+}
+
+.services ul li:first-of-type {
+    border-top: 2px solid white;
+}
+
+.services ul li:nth-of-type(odd) {
+    background-color: rgb(228, 228, 228);
+}
+
+.services ul li:nth-of-type(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+.mainCen:hover .services ul li:nth-of-type(odd) {
+    background-color: white;
+}
+
+.mainCen:hover .services ul li:nth-of-type(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+.sec__title {
+    float: left;
+    width: 330px;
+    border-bottom: 8px solid rgb(36, 186, 160);
+    margin: 40px 0 30px 0;
+    font-size: 1.4em;
+    padding-bottom: 7px;
+    color: rgb(126, 126, 126);
+}
+
+/*SEKCJA FORMULARZ KONTAKTOWY */
+.secKontakt {
+    height: 510px;
+    background-color: white;
+}
+
+.secKontakt .mainDiv {
+    height: 600px;
+}
+
+.secKontakt .mainDiv > div:nth-child(1) {
+    float: left;
+
+}
+
+.secKontakt .mainDiv > div:nth-child(2) {
+    width: 370px;
+    float: right;
+
+}
+
+.formholder {
+    width: 60%;
+    float: left;
+}
+
+.secKontakt form input, .secKontakt form .formholder textarea {
+    box-sizing: border-box;
+    font-family: 'ralewaythin';
+    font-size: 2em;
+    margin: 13px 0;
+    width: 100%;
+    color: rgb(203, 203, 203);
+    border: 1px solid rgb(36, 186, 160);
+    margin-left: 6px;
+    vertical-align: middle;
+    padding: 13px 0 13px 10px;
+}
+
+.secKontakt textarea {
+    height: 190px;
+}
+
+/*CZĘŚC FORMULARZA Z KRZESŁEM I ZGODĄ*/
+
+.redChair_holder {
+    width: 30%;
+    float: right;
+}
+
+.redChair_holder img {
+    position: relative;
+    top: -33px;
+    right: 64px;
+}
+
+.agreement {
+    float: right;
+    color: rgb(203, 203, 203);
+    font-size: 1.3em;
+    font-family: 'ralewaylight';
+    /*position: relative;*/
+    width: 35%;
+    margin: 20px 0;
+}
+
+.agreement div:first-child {
+    border: 1px solid rgb(36, 186, 160);
+    height: 45px;
+    width: 45px;
+    float: left;
+    background-color: white;
+}
+
+.agreement div:first-child input {
+    height: 45px;
+    width: 45px;
+    margin: 0;
+    position: relative;
+    opacity: 0;
+
+}
+
+.checkBoxBird {
+    background: url("images/form_ok.jpg") left -2px top 3px no-repeat;
+    /*background-image: url("images/form_ok.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left -2px top 3px;*/
+    /*opacity: 0.5;*/
+}
+
+.agreement div:nth-child(2) {
+    position: relative;
+    left: 20px;
+    top: 2px;
+}
+
+.but_seeMore1 {
+    margin: 10px auto;
+    font-size: 0.8em;
+}
+
+.buttonBigSend {
+    float: right;
+    width: 30%;
+    height: 75px;
+    font-family: 'ralewaybold' !important;;
+    color: white !important;
+    border: 0;
+    padding: 16px 0;
+    border-radius: 7px;
+    margin-top: 35px;
+}
+
+/*SEKCJA KOMPONUJ*/
+
+.composing {
+    height: 500px;
+    background-color: rgb(241, 241, 241);
+
+}
+
+.composing .empty__4title:nth-child(2) {
+    float: right;
+}
+
+.composing .empty__4title:nth-child(2) div {
+    text-align: right;
+}
+
+.composing img {
+    width: 350px;
+    position: relative;
+    top: 20px;
+    left: -20px;
+}
+
+.inputHolder, .inputHolder ~ div {
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0;
+    width: 33%;
+    float: left;
+    /*border: solid 1px red;*/
+}
+
+.composing form select {
+    box-sizing: border-box;
+    font-family: 'ralewaylight';
+    font-size: 2em;
+    margin: 0;
+    width: 95%;
+    color: rgb(126, 126, 126);
+    border: 1px solid rgb(36, 186, 160);
+    margin-left: 6px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.inputHolder .agreement {
+    float: left;
+    margin-left: 6px;
+}
+
+.inputHolder .agreement div:nth-child(2) {
+    position: relative;
+    left: 65px;
+    top: -35px;
+    /*font-family: 'ralewaylight';*/
+    /*color: rgb(126, 126, 126);*/
+    font-size: 1.5em;
+}
+
+.arrHolder {
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    top: 44px;
+    left: 282px;
+    margin: 0;
+}
+
+.triangArr {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-top: 16px solid rgb(36, 186, 160);
+
+}
+
+form >div:nth-child(3) {
+    padding: 10px 0 10px 10px;
+}
+
+.whiteBoard {
+    background-color: white;
+    /* height: 220px; */
+    width: auto;
+    margin: 20px 0 20px 20px;
+    padding: 5px 10px 15px 10px;
+}
+
+/*TABELKA - podsumowanie*/
+
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    vertical-align: middle;
+}
+
+thead td:first-child {
+    color: rgb(36, 186, 160);
+    border-right: 2px solid rgb(241, 241, 241);
+}
+
+table td:nth-child(2) {
+    color: rgb(36, 186, 160);
+    text-align: right;
+}
+
+tbody {
+    font-family: 'ralewaylight';
+}
+
+tbody tr td:first-child {
+    color: rgb(126, 126, 126);
+    margin: 0;
+    border-right: 2px solid rgb(241, 241, 241);
+    width: 60%;
+}
+
+thead, tfoot {
+    font-family: 'ralewaymedium';
+}
+
+tfoot {
+    height: 2.5em;
+    border-top: 2px solid rgb(241, 241, 241);
+}
+
+tfoot td:first-child {
+    color: rgb(126, 126, 126);
+}
+
+.summaryHolder div:nth-child(2) input {
+    height: auto;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px;
+    font-family: 'ralewaymedium';
+    margin: 5px auto;
+    position: relative;
+    left: 55px;
+}
+
+/*SEKCJA STOPKA*/
+
+.sec__footer {
+    height: 150px;
+    background-color: white;
+    color: rgb(203, 203, 203);
+    padding-top: 65px;
+}
+
+.sec__footer .mainDiv div:first-child {
+    float: left;
+}
+
+.sec__footer p {
+    font-size: 0.9em;
+    font-family: 'ralewaymedium';
+    vertical-align: middle;
+}
+
+.foot__menuLogo {
+    font-family: 'ralewaysemibold';
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin: 15px 0 0 80px;
+    color: rgb(155, 155, 155);
+}
+
+.foo_pics, .foot__menuLogo {
+    float: right;
+}
+
+.foo_pics {
+    margin-right: 5px;
+}
