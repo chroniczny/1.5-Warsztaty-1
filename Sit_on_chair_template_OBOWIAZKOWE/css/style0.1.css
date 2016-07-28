@@ -103,7 +103,7 @@ ul a:first-child li {
 
 /*SEKCJA SLIDER-CAROUSEL*/
 
-.sec__carousel {
+.secCarousel {
     height: 500px;
 
     background: rgba(255, 255, 255, 1);
@@ -116,7 +116,7 @@ ul a:first-child li {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ccccd4', GradientType=0);
 }
 
-.sec__carousel .mainDiv {
+.secCarousel .mainDiv {
     height: 500px;
 }
 
@@ -153,7 +153,7 @@ ul a:first-child li {
     display: none;
 }
 
-.carousel__article {
+.carouselArticle {
     float: left;
     box-sizing: border-box;
     height: 100%;
@@ -163,7 +163,7 @@ ul a:first-child li {
     padding-top: 150px;
 }
 
-.carousel__article p {
+.carouselArticle p {
     font-size: 0.5em;
     line-height: 1.4em;
     margin: 30px;
@@ -178,7 +178,7 @@ h2 span {
     font-family: 'ralewaysemibold';
 }
 
-.but_seeMore {
+.butSeeMore {
     margin: 10px auto;
     width: 250px;
     height: 37px;
@@ -225,7 +225,7 @@ h2 span {
     width: 100%;
 }
 
-.picArt__description {
+.picArtDescription {
     position: absolute;
     bottom: 10px;
     height: 62px;
@@ -235,11 +235,11 @@ h2 span {
 }
 
 /*chowanie opisu obrazka zrobione w css i jako opcja w app.js*/
-/*.picArticle > div:hover .picArt__description {*/
+/*.picArticle > div:hover .picArtDescription {*/
 /*display: none;*/
 /*}*/
 
-.description_into {
+.descriptionInto {
     width: 180px;
     border-bottom: 8px solid rgb(36, 186, 160);
     margin-left: 15px;
@@ -253,7 +253,7 @@ h2 span {
     margin-right: 0;
 }
 
-.picArticle:nth-child(3) .picArt__description {
+.picArticle:nth-child(3) .picArtDescription {
     position: absolute;
     top: 10px;
 }
@@ -266,7 +266,7 @@ p {
     line-height: 1.4em;
 }
 
-.article_text {
+.articleText {
     box-sizing: border-box;
     width: 100%;
     padding: 15px;
@@ -279,12 +279,12 @@ p {
 }
 
 /*   SEKCJA C E N N I K*/
-.sec__cennik {
+.secCennik {
     background-color: rgb(241, 241, 241);
     height: 745px;
 }
 
-.sec__cennik .mainDiv {
+.secCennik .mainDiv {
     height: 700px;
 }
 
@@ -359,7 +359,7 @@ p {
     font-size: 26px;
 }
 
-.round_price {
+.roundPrice {
     background-color: white;
     border-radius: 50%;
     border: 2px solid rgb(214, 214, 214);
@@ -369,12 +369,12 @@ p {
     color: rgb(194, 194, 194);
 }
 
-.mainCen:hover .round_price {
+.mainCen:hover .roundPrice {
     border: 2px solid rgb(36, 186, 160);
     color: rgb(36, 186, 160);
 }
 
-.round_price h3 {
+.roundPrice h3 {
     text-align: center;
     font-family: 'ralewaybold';
     font-size: .9em;
@@ -426,7 +426,7 @@ h1 {
     background-color: rgb(241, 241, 241);
 }
 
-.sec__title {
+.secTitle {
     float: left;
     width: 330px;
     border-bottom: 8px solid rgb(36, 186, 160);
@@ -481,12 +481,12 @@ h1 {
 
 /*CZĘŚC FORMULARZA Z KRZESŁEM I ZGODĄ*/
 
-.redChair_holder {
+.redChairHolder {
     width: 30%;
     float: right;
 }
 
-.redChair_holder img {
+.redChairHolder img {
     position: relative;
     top: -33px;
     right: 64px;
@@ -533,7 +533,7 @@ h1 {
     top: 2px;
 }
 
-.but_seeMore1 {
+.butSeeMore1 {
     margin: 10px auto;
     font-size: 0.8em;
 }
@@ -558,11 +558,11 @@ h1 {
 
 }
 
-.composing .empty__4title:nth-child(2) {
+.composing .empty4title:nth-child(2) {
     float: right;
 }
 
-.composing .empty__4title:nth-child(2) div {
+.composing .empty4title:nth-child(2) div {
     text-align: right;
 }
 
@@ -603,8 +603,6 @@ h1 {
     position: relative;
     left: 65px;
     top: -35px;
-    /*font-family: 'ralewaylight';*/
-    /*color: rgb(126, 126, 126);*/
     font-size: 1.5em;
 }
 
@@ -697,24 +695,24 @@ tfoot td:first-child {
 
 /*SEKCJA STOPKA*/
 
-.sec__footer {
+.secFooter {
     height: 150px;
     background-color: white;
     color: rgb(203, 203, 203);
     padding-top: 65px;
 }
 
-.sec__footer .mainDiv div:first-child {
+.secFooter .mainDiv div:first-child {
     float: left;
 }
 
-.sec__footer p {
+.secFooter p {
     font-size: 0.9em;
     font-family: 'ralewaymedium';
     vertical-align: middle;
 }
 
-.foot__menuLogo {
+.footMenuLogo {
     font-family: 'ralewaysemibold';
     font-size: 1.25em;
     letter-spacing: 0.1em;
@@ -722,10 +720,10 @@ tfoot td:first-child {
     color: rgb(155, 155, 155);
 }
 
-.foo_pics, .foot__menuLogo {
+.fooPics, .footMenuLogo {
     float: right;
 }
 
-.foo_pics {
+.fooPics {
     margin-right: 5px;
 }

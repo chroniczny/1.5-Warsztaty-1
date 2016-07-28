@@ -90,15 +90,17 @@ document.addEventListener("DOMContentLoaded", function () {
         imgSliding[counter].classList.remove('invisible');
     });
 // Zad *[gwiazdka].
-//var arrow = document.querySelectorAll('.arrHolder');
+var arrow = document.querySelectorAll('.arrHolder');
 //console.log(arrow);
 //    arrow.forEach(function(el){
-//
-//        el.addEventListener('click', function(event){
-//            console.log(el+"is clicked");
-//            this.nextElementSibling.click();
-//        })
-//    })
+
+        //el.addEventListener('click', function(event){
+
+            //el.nextElementSibling.click();
+            //
+        //})
+    //})
+
 
 // inputy
     var inptType = document.querySelector('.inputHolder select:nth-child(2)');
@@ -110,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var inptTransport = document.querySelector('.inputHolder .agreement input');
     //var inptTransportBird = document.querySelector('.inputHolder .agreement > div');
 
-    //outputy:
+//outputy:
     var chosenType = document.querySelector('.summaryHolder thead tr td:first-child');
     var chosenTypePrice = document.querySelector('.summaryHolder thead tr td:nth-child(2)');
 
@@ -143,7 +145,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 var price = el.dataset.price;
                 chosenColor.innerText = type;
                 chosenColorPrice.innerText = price+" zł";
-
             }
         })
     });
