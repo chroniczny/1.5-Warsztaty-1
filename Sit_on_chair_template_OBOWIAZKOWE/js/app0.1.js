@@ -89,17 +89,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         imgSliding[counter].classList.remove('invisible');
     });
-// Zad *[gwiazdka].
-var arrow = document.querySelectorAll('.arrHolder');
-//console.log(arrow);
-//    arrow.forEach(function(el){
+// Zad *[gwiazdka]....
+    var arrow = document.querySelectorAll('.arrHolder .triangArr'); // naciśnięcie strzałki i tak spowoduje naciśnięcie diva w którym jest...
+    //console.log(arrow);
 
-        //el.addEventListener('click', function(event){
-
-            //el.nextElementSibling.click();
-            //
-        //})
-    //})
+    arrow.forEach(function (element) {
+        element.addEventListener('mousedown', function (event) {
+            console.log(element);
+            function eventFire(el, etype) { // tworzymy funkcję z argumentami: adresat funkcji i etype -> rodzaj eventu?
+                if (el.fireEvent) { // jeśli odpalamy uruchamiamy event na elemencie wskazanym
+                    el.fireEvent('on' + etype); // pierwszy parametr przyjmuje nazwę np.on+click, tu: onmousedown
+                } else {                                // w przeciwnym razie:
+                    var evObj = document.createEvent('Events'); // tworzy nowy event
+                    evObj.initEvent(etype, true, false); //
+                    el.dispatchEvent(evObj); // i przekazuje nowy event elementowi
+                }
+            }
+            var clickOnInpt = element.parentElement.nextElementSibling; // znajduję select względem strzałki
+            console.log(clickOnInpt); // sprawdzam czy na dobrym elemencie chcę wywołąć funkcję -tak
+            eventFire(clickOnInpt, 'mousedown'); // wywołuję na nim funkcję-event "klikający"
+            //I NIC SIĘ NIE DZIEJE :((
+        })
+    });
 
 
 // inputy
@@ -126,83 +137,81 @@ var arrow = document.querySelectorAll('.arrHolder');
     var chosenTransportPrice = document.querySelector('.summaryHolder tbody tr:nth-child(3) td:nth-child(2)');
     var summaryPrice = document.querySelector('.summaryHolder tfoot tr td:nth-child(2)');
 // typ krzesła
-    inptType.addEventListener('change', function(event){
-        inptTypeOptions.forEach(function(el){
-            if(el.selected) {
+    inptType.addEventListener('change', function (event) {
+        inptTypeOptions.forEach(function (el) {
+            if (el.selected) {
                 var type = el.value;
                 var price = el.dataset.price;
                 chosenType.innerText = type;
-                chosenTypePrice.innerText = price+" zł";
+                chosenTypePrice.innerText = price + " zł";
             }
         })
     });
 
 // kolor krzesła
-    inptColor.addEventListener('change', function(event){
-        inptColorOptions.forEach(function(el){
-            if(el.selected) {
+    inptColor.addEventListener('change', function (event) {
+        inptColorOptions.forEach(function (el) {
+            if (el.selected) {
                 var type = el.value;
                 var price = el.dataset.price;
                 chosenColor.innerText = type;
-                chosenColorPrice.innerText = price+" zł";
+                chosenColorPrice.innerText = price + " zł";
             }
         })
     });
 
 
 // materiał krzesła
-    inptMaterial.addEventListener('change', function(event){
-        inptMaterialOptions.forEach(function(el){
-            if(el.selected) {
+    inptMaterial.addEventListener('change', function (event) {
+        inptMaterialOptions.forEach(function (el) {
+            if (el.selected) {
                 var type = el.value;
                 var price = el.dataset.price;
                 chosenMaterial.innerText = type;
-                chosenMaterialPrice.innerText = price+" zł";
+                chosenMaterialPrice.innerText = price + " zł";
             }
         })
     });
 
 // transport
-    inptTransport.addEventListener('click', function(event){
+    inptTransport.addEventListener('click', function (event) {
 
-            if(inptTransport.checked) {
-                chosenTransport.innerText = "Transport";
-                chosenTransportPrice.innerText = "200 zł";
-            } else {
-                chosenTransport.innerText = "";
-                chosenTransportPrice.innerText = "";
-            }
-            });
+        if (inptTransport.checked) {
+            chosenTransport.innerText = "Transport";
+            chosenTransportPrice.innerText = "200 zł";
+        } else {
+            chosenTransport.innerText = "";
+            chosenTransportPrice.innerText = "";
+        }
+    });
 // PODSUMUJ koszt dokonanych wyborów............
-var inputs = document.querySelectorAll('.inputHolder input, .inputHolder select'); // wszsytkie inputy formularza
-    inputs.forEach(function(el){ // dla których
+    var inputs = document.querySelectorAll('.inputHolder input, .inputHolder select'); // wszsytkie inputy formularza
+    inputs.forEach(function (el) { // dla których
 
-        el.addEventListener('click', function(event){ // funkcję zliczania będzie wywoływał każdy klik na inputy/selecty
+        el.addEventListener('click', function (event) { // funkcję zliczania będzie wywoływał każdy klik na inputy/selecty
             var TypeCost = chosenTypePrice.innerText;
             var ColorCost = chosenColorPrice.innerText;
             var MaterCost = chosenMaterialPrice.innerText;
-            var TranspCost =chosenTransportPrice.innerText;
-var costArr = [];
+            var TranspCost = chosenTransportPrice.innerText;
+            var costArr = [];
             costArr.push(TypeCost); // wrzucam wartości outputów do tablicy
             costArr.push(ColorCost);
             costArr.push(MaterCost);
             costArr.push(TranspCost);
             var suma = 0;
 
-            for (i=0; i<costArr.length; i++) { // dla każdego elem.
-                if(costArr[i]===""){ // jeśli nie ma nic przypisuję 0
-                    costArr[i]=0;
+            for (i = 0; i < costArr.length; i++) { // dla każdego elem.
+                if (costArr[i] === "") { // jeśli nie ma nic przypisuję 0
+                    costArr[i] = 0;
                 } else {
-                    costArr[i]=parseInt(costArr[i]); // zawartość zamieniam na liczbę
+                    costArr[i] = parseInt(costArr[i]); // zawartość zamieniam na liczbę
                 }
-                suma+=costArr[i]; // sumuję zawartosc tablicy
+                suma += costArr[i]; // sumuję zawartosc tablicy
             }
             //console.log("tablica po "+costArr); // sprawdzam
-            summaryPrice.innerText = suma+" zł"; // wrzucam wynik SUMA do outputa
+            summaryPrice.innerText = suma + " zł"; // wrzucam wynik SUMA do outputa
         })
     })
-
-
 
 
 });
