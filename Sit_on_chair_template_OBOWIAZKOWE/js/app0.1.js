@@ -90,27 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
         imgSliding[counter].classList.remove('invisible');
     });
 // Zad *[gwiazdka]....
-    var arrow = document.querySelectorAll('.arrHolder .triangArr'); // naciśnięcie strzałki i tak spowoduje naciśnięcie diva w którym jest...
-    //console.log(arrow);
-
-    arrow.forEach(function (element) {
-        element.addEventListener('mousedown', function (event) {
-            console.log(element);
-            function eventFire(el, etype) { // tworzymy funkcję z argumentami: adresat funkcji i etype -> rodzaj eventu?
-                if (el.fireEvent) { // jeśli odpalamy uruchamiamy event na elemencie wskazanym
-                    el.fireEvent('on' + etype); // pierwszy parametr przyjmuje nazwę np.on+click, tu: onmousedown
-                } else {                                // w przeciwnym razie:
-                    var evObj = document.createEvent('Events'); // tworzy nowy event
-                    evObj.initEvent(etype, true, false); //
-                    el.dispatchEvent(evObj); // i przekazuje nowy event elementowi
-                }
-            }
-            var clickOnInpt = element.parentElement.nextElementSibling; // znajduję select względem strzałki
-            console.log(clickOnInpt); // sprawdzam czy na dobrym elemencie chcę wywołąć funkcję -tak
-            eventFire(clickOnInpt, 'mousedown'); // wywołuję na nim funkcję-event "klikający"
-            //I NIC SIĘ NIE DZIEJE :((
-        })
-    });
 
 
 // inputy
@@ -212,6 +191,31 @@ document.addEventListener("DOMContentLoaded", function () {
             summaryPrice.innerText = suma + " zł"; // wrzucam wynik SUMA do outputa
         })
     })
+
+    //PONIŻSZA ZAKOMENTOWANA CZĘŚć KODU TO ZASTOSOWNIE Symulacji Klikniecia na elemencie znajdujacym się pod strzałką
+    // okazało sie że to nie ma zastosowania...
+
+    //var arrow = document.querySelectorAll('.arrHolder .triangArr'); // naciśnięcie strzałki i tak spowoduje naciśnięcie diva w którym jest...
+    ////console.log(arrow);
+    //
+    //arrow.forEach(function (element) {
+    //    element.addEventListener('mousedown', function (event) {
+    //        console.log(element);
+    //        function eventFire(el, etype) { // tworzymy funkcję z argumentami: adresat funkcji i etype -> rodzaj eventu?
+    //            if (el.fireEvent) { // jeśli odpalamy uruchamiamy event na elemencie wskazanym
+    //                el.fireEvent('on' + etype); // pierwszy parametr przyjmuje nazwę np.on+click, tu: onmousedown
+    //            } else {                                // w przeciwnym razie:
+    //                var evObj = document.createEvent('Events'); // tworzy nowy event
+    //                evObj.initEvent(etype, true, false); //
+    //                el.dispatchEvent(evObj); // i przekazuje nowy event elementowi
+    //            }
+    //        }
+    //        var clickOnInpt = element.parentElement.nextElementSibling; // znajduję select względem strzałki
+    //        console.log(clickOnInpt); // sprawdzam czy na dobrym elemencie chcę wywołąć funkcję -tak
+    //        eventFire(clickOnInpt, 'mousedown'); // wywołuję na nim funkcję-event "klikający"
+    //        //I NIC SIĘ NIE DZIEJE :((
+    //    })
+    //});
 
 
 });
